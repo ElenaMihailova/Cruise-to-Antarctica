@@ -1,0 +1,28 @@
+.promo__wrapper {
+  padding-top: 178px;
+  padding-bottom: 283px;
+  padding-left: 198px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+.promo__title {
+  margin: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 66px;
+  color: #f9fbfd;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 30px;
+}
+
+.promo__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #f9fbfd;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0;
+}

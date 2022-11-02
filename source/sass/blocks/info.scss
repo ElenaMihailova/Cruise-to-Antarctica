@@ -1,0 +1,27 @@
+.info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 88px;
+  padding-top: 120px;
+  padding-bottom: 145px;
+}
+
+.info__title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.5;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.info__text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.info__wrapper {
+  max-width: 512px;
+  align-self: center;
+}

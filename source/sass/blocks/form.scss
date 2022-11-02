@@ -1,0 +1,39 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form__input-wrapper input {
+  width: 100%;
+  padding: 11px;
+  border: none;
+  padding-left: 16px;
+}
+
+.form__input-wrapper {
+  width: 100%;
+}
+
+.form__input-wrapper input::placeholder {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.form button {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #011c40;
+  border: none;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 17px;
+  margin-top: 10px;
+}

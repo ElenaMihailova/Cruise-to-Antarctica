@@ -1,0 +1,40 @@
+.booking {
+  background-image: url("../img/backgroundForm.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.booking__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.booking__description {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  width: 60%;
+}
+
+.booking__wrapper {
+  flex: 0 0 403px;
+  background-color: #011c40;
+  box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
+  padding: 50px;
+}
+
+.booking__text {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  color: $color-alice-blue;
+  margin-bottom: 35px;
+}

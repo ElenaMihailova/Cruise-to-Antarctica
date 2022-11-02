@@ -385,11 +385,35 @@ template {
 }
 
 @font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
   font-style: normal;
   font-weight: 400;
-  font-family: "";
   font-display: swap;
-  src: url("../fonts/.woff2") format("woff2"), url("../fonts/.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
 }
 
 *,
@@ -401,7 +425,7 @@ template {
 
 html,
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   min-height: 100vh;
 }
@@ -421,7 +445,21 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background-color: #d6e3f2;
+  background-color: #f9fbfd;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #011c40;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
 }
 
 a {
@@ -746,6 +784,475 @@ button,
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
+}
+
+.header {
+  margin: 0;
+  padding-top: 35px;
+  padding-left: 103px;
+  padding-right: 103px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+}
+
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navigation__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 33px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation__link {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.advantages {
+  background-image: url("../../img/backgroundAdventages.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 60px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.advantages__item svg {
+  fill: #011c40;
+}
+
+.advantages__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.advantages__title {
+  font-family: "Montserrat", "Arial";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.5;
+  color: #011c40;
+}
+
+.advantages__title {
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.5;
+}
+
+.advantages__item {
+  max-width: 30%;
+  background-color: #f9fbfd;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.advantages__item h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.advantages__item p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.main {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.main__background {
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  min-height: 650px;
+}
+
+.footer {
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 88px;
+  padding-top: 120px;
+  padding-bottom: 145px;
+}
+
+.info__title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.5;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.info__text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.info__wrapper {
+  max-width: 512px;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.promo__wrapper {
+  padding-top: 178px;
+  padding-bottom: 283px;
+  padding-left: 198px;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.promo__title {
+  margin: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 66px;
+  color: #f9fbfd;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 30px;
+}
+
+.promo__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #f9fbfd;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0;
+}
+
+.catalog {
+  padding-top: 95px;
+  padding-bottom: 120px;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.catalog__title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.5;
+  margin-bottom: 60px;
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.catalog__item {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 260px;
+  flex: 0 0 260px;
+}
+
+.card {
+  position: relative;
+  min-height: 386px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+
+.card__content {
+  display: none;
+}
+
+.card__button {
+  display: none;
+}
+
+.card__preview {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  z-index: -1;
+}
+
+.card__preview img {
+  min-height: 386px;
+}
+
+.card h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #f9fbfd;
+  margin: 0;
+}
+
+.booking {
+  background-image: url("../img/backgroundForm.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.booking__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.booking__description {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  width: 60%;
+}
+
+.booking__wrapper {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 403px;
+  flex: 0 0 403px;
+  background-color: #011c40;
+  -webkit-box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
+  box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
+  padding: 50px;
+}
+
+.booking__text {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #f9fbfd;
+  margin-bottom: 35px;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form__input-wrapper input {
+  width: 100%;
+  padding: 11px;
+  border: none;
+  padding-left: 16px;
+}
+
+.form__input-wrapper {
+  width: 100%;
+}
+
+.form__input-wrapper input::-webkit-input-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.form__input-wrapper input::-moz-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.form__input-wrapper input:-ms-input-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.form__input-wrapper input::-ms-input-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.form__input-wrapper input::placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.form button {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #011c40;
+  border: none;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 17px;
+  margin-top: 10px;
+}
+
+.checkbox input {
+  width: 18px;
+  height: 18px;
+  background-color: #f9fbfd;
+  margin-right: 5px;
+}
+
+.checkbox span {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.3;
+  color: #f9fbfd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.checkbox label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 /* @mixin hover-focus {
