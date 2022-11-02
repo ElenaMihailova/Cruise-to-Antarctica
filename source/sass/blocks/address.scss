@@ -1,0 +1,41 @@
+.address {
+  padding: 120px 103px;
+}
+
+.address__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.address__map {
+  background-image: url("../img/map.jpg");
+  flex: 0 0 560px;
+  height: 306px;
+}
+
+.address__description {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 45px;
+}
+
+.address__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.address__link-wrap {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.address__link-wrap:last-of-type {
+  margin-bottom: 0;
+}

@@ -1,4 +1,15 @@
 .footer {
   flex-grow: 0;
   flex-shrink: 0;
+  background-color: #011c40;
+  padding: 50px;
+}
+
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.footer__logo {
+  margin-right: 40px;
 }

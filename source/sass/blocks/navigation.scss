@@ -1,9 +1,18 @@
 .navigation__list {
+  @include vp-767 {
+    display: none;
+  }
+
+  @include vp-1023 {
+    gap: 23px;
+  }
+
   list-style: none;
   display: flex;
   gap: 33px;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 .navigation__link {

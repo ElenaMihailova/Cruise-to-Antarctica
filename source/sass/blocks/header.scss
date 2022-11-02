@@ -1,4 +1,8 @@
 .header {
+  @include vp-1023 {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
   margin: 0;
   padding-top: 35px;
   padding-left: 103px;
@@ -11,4 +15,11 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+
+.header__button {
+  @include vp-767 {
+    display: block;
+  }
+  display: none;
 }
