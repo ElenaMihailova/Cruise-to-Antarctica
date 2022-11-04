@@ -1,12 +1,7 @@
 .card {
-  position: relative;
-  min-height: 386px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding-left: 30px;
-  padding-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
 }
 
 .card__content {
@@ -18,16 +13,21 @@
 }
 
 .card__preview {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
   z-index: -1;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  width: 100%;
 }
 
 .card__preview img {
+  @include vp-767 {
+    width: 100%;
+  }
+
+  @include vp-1023 {
+    min-width: 309px;
+  }
+
   min-height: 386px;
 }
 
@@ -37,4 +37,8 @@
   line-height: 1.5;
   color: $color-alice-blue;
   margin: 0;
+  grid-row: 2/3;
+  grid-column: 1/-1;
+  margin-left: 30px;
+  margin-bottom: 30px;
 }

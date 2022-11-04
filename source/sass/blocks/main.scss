@@ -3,7 +3,17 @@
 }
 
 .main__background {
-  background-image: url("../img/background.jpg");
+  @include vp-767 {
+    background-image: url("../img/backgroundmobile.webp");
+    min-height: 500px;
+  }
+
+  @include vp-1023 {
+    background-image: url("../img/backgroundtablet.webp");
+    min-height: 638px;
+  }
+
+  background-image: url("../img/background.webp");
   background-repeat: no-repeat;
   position: absolute;
   background-size: cover;

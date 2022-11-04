@@ -21,23 +21,28 @@
           <img class="logo__img" src="./img/svg/logo.svg" width="70" height="38" alt="Логотип круизов в Антарктику.">
         </a>
       </div>
-      <nav class="header__navigation navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Преимущества</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Направления</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Ближайшие круизы</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <button class="header__button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="header__menu-wrap">
+        <input class="header__check" id="header__toggle" type="checkbox" />
+        <label class="header__button" for="header__toggle">
+          <span></span>
+        </label>
+        <nav class="header__navigation navigation navigation--header">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Преимущества</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Направления</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Ближайшие круизы</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
   <main class="main">
@@ -351,7 +356,7 @@
           <img class="logo__img" src="./img/svg/logo.svg" width="70" height="38" alt="Логотип круизов в Антарктику.">
         </a>
       </div>
-      <nav class="footer__navigation navigation">
+      <nav class="footer__navigation navigation navigation--footer">
         <ul class="navigation__list">
           <li class="navigation__item">
             <a class="navigation__link" href="#">Преимущества</a>

@@ -3,6 +3,7 @@
     padding-left: 45px;
     padding-right: 45px;
   }
+
   margin: 0;
   padding-top: 35px;
   padding-left: 103px;
@@ -12,14 +13,74 @@
 }
 
 .header__wrapper {
+  @include vp-767 {
+    align-items: center;
+  }
+
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
+.header__check {
+  opacity: 0;
+  position: absolute;
+}
+
 .header__button {
   @include vp-767 {
-    display: block;
+    display: flex;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+    background-color: transparent;
   }
+
   display: none;
 }
+
+.header__button > span,
+.header__button > span::before,
+.header__button > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: $color-default-white;
+  transition-duration: 0.25s;
+}
+
+.header__button > span::before {
+  content: "";
+  top: -8px;
+}
+
+.header__button > span::after {
+  content: "";
+  top: 8px;
+}
+
+.header__check:checked ~ .header__button > span {
+  transform: rotate(45deg);
+}
+
+.header__check:checked ~ .header__button > span::before {
+  top: 0;
+  transform: rotate(0);
+  background-color: #011c40;
+}
+
+.header__check:checked ~ .header__button > span::after {
+  top: 0;
+  transform: rotate(90deg);
+  background-color: #011c40;
+}
+
+.header__check:checked ~ .navigation {
+  display: block;
+}
+
+//todo логотип меняет цвет, убрать реализацию css

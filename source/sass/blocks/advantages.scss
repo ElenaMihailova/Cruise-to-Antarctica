@@ -1,5 +1,20 @@
 .advantages {
-  background-image: url("../../img/backgroundAdventages.jpg");
+  @include vp-767 {
+    background-image: url("../img/background-adventages-mobile.webp");
+    padding-bottom: 65px;
+    padding-top: 65px;
+    gap: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @include vp-1023 {
+    background-image: url("../img/background-adventages-tablet.webp");
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  background-image: url("../img/background-adventages.webp");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 120px;
@@ -17,6 +32,16 @@
 }
 
 .advantages__list {
+  @include vp-767 {
+    gap: 30px;
+  }
+
+  @include vp-1023 {
+    gap: 0;
+    justify-content: space-between;
+    row-gap: 30px;
+  }
+
   list-style: none;
   padding: 0;
   margin: 0;
@@ -27,6 +52,16 @@
 }
 
 .advantages__title {
+  @include vp-767 {
+    font-size: 24px;
+  }
+
+  @include vp-1023 {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 1.5;
+  }
+
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -37,6 +72,15 @@
 }
 
 .advantages__item {
+  @include vp-767 {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  @include vp-1023 {
+    max-width: 27%;
+  }
+
   max-width: 30%;
   background-color: $color-alice-blue;
   padding-top: 30px;
@@ -46,6 +90,10 @@
 }
 
 .advantages__item h3 {
+  @include vp-1023 {
+    line-height: 1.4;
+  }
+
   font-weight: 500;
   font-size: 18px;
   line-height: 1.5;
