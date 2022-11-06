@@ -15,6 +15,8 @@
 
 <body>
   <header class="header">
+    <div class="header__background">
+    </div>
     <div class="header__wrapper">
       <div class="header__logo logo">
         <a class="logo__link" href="#">
@@ -29,34 +31,28 @@
         <nav class="header__navigation navigation navigation--header">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Преимущества</a>
+              <a class="navigation__link" href="#advantages">Преимущества</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Направления</a>
+              <a class="navigation__link" href="#promo">Направления</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Ближайшие круизы</a>
+              <a class="navigation__link" href="#catalog">Ближайшие круизы</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Контакты</a>
+              <a class="navigation__link" href="#address">Контакты</a>
             </li>
           </ul>
         </nav>
       </div>
     </div>
+    <div class="header__promo promo" id="promo">
+      <h2 class="promo__title">Круизы в&nbsp;Антарктику</h2>
+      <p class="promo__text">Волшебный мир айсбергов и пингвинов</p>
+    </div>
   </header>
   <main class="main">
     <h1 class="visually-hidden">Tуристический проект “Круизы в Антарктику”.</h1>
-    <div class="main__background">
-
-    </div>
-    <section class="promo">
-      <div class="promo__wrapper">
-        <h2 class="promo__title">Круизы в Антарктику</h2>
-        <p class="promo__text">Волшебный мир айсбергов и пингвинов</p>
-      </div>
-    </section>
-
     <section class="info">
       <div class="info__wrapper">
         <h2 class="info__title">Путешествие на край Земли</h2>
@@ -69,7 +65,7 @@
       </div>
     </section>
 
-    <section class="advantages">
+    <section class="advantages" id="advantages">
       <h2 class="advantages__title">Преимущества</h2>
       <ul class="advantages__list">
         <li class="advantages__item">
@@ -77,7 +73,7 @@
             <use xlink:href="./img/sprite/sprite.svg#ship"></use>
           </svg>
           <h3>Небольшой круизный лайнер</h3>
-          <p>Круизный лайнер, рассчитанный всего лишь на&nbsp;300 гостей, поможет избежать шума и&nbsp;очередей
+          <p>Круизный лайнер, рассчитанный всего лишь на&nbsp;300 гостей, поможет избежать шума и очередей
             и&nbsp;даст возможность насладиться видами и&nbsp;природой.</p>
         </li>
         <li class="advantages__item">
@@ -85,21 +81,21 @@
             <use xlink:href="./img/sprite/sprite.svg#check"></use>
           </svg>
           <h3>Система все включено</h3>
-          <p>Все наши круизы работают по&nbsp;системе &laquo;Все Включено&raquo;. Великолепные блюда
+          <p>Все наши круизы работают по системе &ldquo;Все Включено&rdquo;. Великолепные блюда
             и&nbsp;безлимитный бар доступны для вас 24 часа.</p>
         </li>
-        <li class="advantages__item">
+        <li class="advantages__item advantages__item--different">
           <svg width="44" height="32" viewBox="0 0 44 32">
             <use xlink:href="./img/sprite/sprite.svg#boat"></use>
           </svg>
           <h3>Экскурсионные туры на Zodiac</h3>
-          <p>Экскурсионные туры к&nbsp;берегам Антарктиды совершаются на&nbsp;оборудованных лодках типа Zodiack
-            c&nbsp;опытными экскурсоводами.</p>
+          <p>Экскурсионные туры к берегам Антарктиды совершаются на оборудованных лодках типа Zodiack
+            c опытными экскурсоводами.</p>
         </li>
       </ul>
     </section>
 
-    <section class="catalog">
+    <section class="catalog" id="catalog">
       <h2 class="catalog__title">Ближайшие круизы</h2>
       <ul class="catalog__list">
         <li class="catalog__item card">
@@ -324,7 +320,7 @@
       </div>
     </section>
 
-    <section class="address">
+    <section class="address" id="address">
       <h2 class="visually-hidden">Адрес офиса.</h2>
       <div class="address__wrapper">
         <div class="address__map">
@@ -336,7 +332,7 @@
             <svg width="18" height="22" viewBox="0 0 18 22">
               <use xlink:href="./img/sprite/sprite.svg#map"></use>
             </svg>
-            <a class="address__link">г. Санкт Петербург, ул. Большая Конюшенная, 19/8</a>
+            <a class="address__link">г. Санкт Петербург, ул.&nbsp;Большая Конюшенная, 19/8</a>
           </div>
           <div class="address__link-wrap">
             <svg width="18" height="18" viewBox="0 0 18 18">
@@ -359,22 +355,22 @@
       <nav class="footer__navigation navigation navigation--footer">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Преимущества</a>
+            <a class="navigation__link" href="#advantages">Преимущества</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Направления</a>
+            <a class="navigation__link" href="#promo">Направления</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Ближайшие круизы</a>
+            <a class="navigation__link" href="#catalog">Ближайшие круизы</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Контакты</a>
+            <a class="navigation__link" href="#address">Контакты</a>
           </li>
         </ul>
       </nav>
       <ul class="footer__social social">
         <li class="social__item">
-          <a class="social__link social__link--ok" href="#" title="Наш Одноклассники">
+          <a class="social__link social__link--ok" href="https://ok.ru/arctic.ru" title="Наш Одноклассники">
             <svg width="12" height="20" viewBox="0 0 12 20">
               <use xlink:href="./img/sprite/sprite.svg#ok"></use>
             </svg>
@@ -382,7 +378,7 @@
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--dzen" href="#" title="Наш Дзен">
+          <a class="social__link social__link--dzen" href="https://dzen.ru/thearctic" title="Наш Дзен">
             <svg width="20" height="20" viewBox="0 0 20 20">
               <use xlink:href="./img/sprite/sprite.svg#dzen"></use>
             </svg>
@@ -390,7 +386,7 @@
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--reddit" href="#" title="Наш Reddit">
+          <a class="social__link social__link--reddit" href="https://www.reddit.com" title="Наш Reddit">
             <svg width="20" height="20" viewBox="0 0 20 20">
               <use xlink:href="./img/sprite/sprite.svg#reddit"></use>
             </svg>

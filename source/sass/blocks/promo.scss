@@ -1,30 +1,25 @@
-.promo__wrapper {
+.promo {
   @include vp-767 {
-    padding-top: 84px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 185px;
+    padding-top: 133px;
+    padding-bottom: 179px;
   }
 
   @include vp-1023 {
-    padding-bottom: 280px;
-    padding-left: 45px;
-    padding-right: 45px;
+    padding-left: 0;
+    padding-top: 214px;
+    padding-bottom: 276px;
   }
 
-  padding-top: 178px;
-  padding-bottom: 283px;
-  padding-left: 198px;
-  background-color: transparent;
-  display: flex;
-  flex-direction: column;
+  padding-top: 197px;
+  padding-bottom: 278px;
+  padding-left: 95px;
 }
 
 .promo__title {
   @include vp-767 {
     font-size: 36px;
     line-height: 45px;
-    margin-bottom: 25px;
+    margin-bottom: 11px;
   }
 
   @include vp-1023 {
@@ -39,17 +34,19 @@
   line-height: 66px;
   color: #f9fbfd;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  margin-bottom: 30px;
+  margin-bottom: 13px;
 }
 
 .promo__text {
   @include vp-767 {
     font-size: 16px;
+    width: 70%;
   }
 
   @include vp-1023 {
     font-size: 18px;
     line-height: 22px;
+    width: auto;
   }
 
   font-weight: 400;
@@ -58,4 +55,24 @@
   color: #f9fbfd;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   margin: 0;
+}
+
+.promo__background {
+  @include vp-767 {
+    background-image: url("../img/backgroundmobile.webp");
+  }
+
+  @include vp-1023 {
+    background-image: url("../img/backgroundtablet.webp");
+  }
+
+  background-image: url("../img/background.webp");
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
 }

@@ -1,4 +1,8 @@
 .card {
+  @include vp-1023 {
+    width: 100%;
+  }
+
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
@@ -25,13 +29,24 @@
   }
 
   @include vp-1023 {
-    min-width: 309px;
+    height: 387px;
+    width: 100%;
   }
 
   min-height: 386px;
 }
 
 .card h3 {
+  @include vp-767 {
+    margin-bottom: 18px;
+    margin-left: 25px;
+  }
+
+  @include vp-1023 {
+    margin-bottom: 27px;
+    margin-left: 35px;
+  }
+
   font-weight: 500;
   font-size: 18px;
   line-height: 1.5;
@@ -40,5 +55,5 @@
   grid-row: 2/3;
   grid-column: 1/-1;
   margin-left: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }

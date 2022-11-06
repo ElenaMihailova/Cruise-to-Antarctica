@@ -1,14 +1,21 @@
 .info {
   @include vp-767 {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 65px;
+    padding-top: 58px;
     padding-bottom: 85px;
   }
 
   @include vp-1023 {
-    padding-top: 100px;
+    padding-top: 90px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 95px;
+    gap: 20px;
   }
 
   @include vp-1919 {
@@ -16,60 +23,70 @@
     padding-right: 50px;
   }
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  padding-top: 120px;
+  padding-top: 118px;
   padding-bottom: 145px;
   padding-left: 103px;
   padding-right: 103px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
 }
 
 .info__title {
   @include vp-767 {
     font-size: 24px;
+    margin: 0;
+    margin-bottom: 14px;
   }
 
   @include vp-1023 {
     font-size: 26px;
     line-height: 1.4;
+    width: 69%;
+    margin-bottom: 14px;
   }
 
   font-weight: 600;
   font-size: 28px;
   line-height: 1.5;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 22px;
+  width: 100%;
 }
 
 .info__text {
+  @include vp-1023 {
+    padding-right: 4px;
+  }
+
   font-size: 16px;
   line-height: 1.5;
   margin: 0;
+  padding-right: 40px;
 }
 
 .info__wrapper {
-  @include vp-767 {
-    width: 100%;
-  }
-
   @include vp-1023 {
-    width: 50%;
+    width: 100%;
+    padding-top: 0;
+    padding-left: 0;
   }
 
-  width: 30%;
+  padding-top: 0;
+  flex-shrink: 1;
+  padding-left: 52px;
+  align-self: center;
 }
 
 .info__img-wrapper {
   @include vp-767 {
-    flex: 0 0 290px;
+    width: 100%;
+    padding-top: 24px;
   }
 
   @include vp-1023 {
     align-self: flex-start;
-    flex: 0 0 324px;
+    width: 324px;
+    padding-top: 10px;
   }
-
-  flex: 0 0 560px;
 }

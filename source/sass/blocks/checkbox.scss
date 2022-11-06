@@ -1,8 +1,14 @@
 .checkbox input {
+  @include vp-767 {
+    width: 20px;
+    height: 20px;
+    margin-right: 0;
+  }
+
   width: 18px;
   height: 18px;
   background-color: $color-alice-blue;
-  margin-right: 5px;
+  flex-shrink: 0;
 }
 
 .checkbox span {
@@ -16,6 +22,21 @@
 }
 
 .checkbox label {
+  @include vp-767 {
+    gap: 7px;
+  }
+
   display: flex;
   align-items: center;
+  flex-wrap: nowrap;
+  letter-spacing: 0.04rem;
+  gap: 5px;
+}
+
+.checkbox:hover span {
+  color: $color-saffron-hover;
+}
+
+.checkbox:hover input {
+  outline: 2px solid $color-saffron-hover;
 }

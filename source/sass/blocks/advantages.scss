@@ -2,32 +2,37 @@
   @include vp-767 {
     background-image: url("../img/background-adventages-mobile.webp");
     padding-bottom: 65px;
-    padding-top: 65px;
-    gap: 40px;
+    padding-top: 56px;
+    gap: 32px;
     padding-left: 15px;
     padding-right: 15px;
   }
 
   @include vp-1023 {
     background-image: url("../img/background-adventages-tablet.webp");
-    padding-top: 100px;
+    padding-top: 89px;
     padding-bottom: 100px;
+    gap: 48px;
   }
 
   background-image: url("../img/background-adventages.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 120px;
+  padding-top: 111px;
   padding-bottom: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 60px;
+  gap: 47px;
   padding-left: 40px;
   padding-right: 40px;
 }
 
 .advantages__item svg {
+  @include vp-1023 {
+    width: 22px;
+  }
+
   fill: #011c40;
 }
 
@@ -37,9 +42,8 @@
   }
 
   @include vp-1023 {
-    gap: 0;
-    justify-content: space-between;
-    row-gap: 30px;
+    justify-content: center;
+    gap: 30px;
   }
 
   list-style: none;
@@ -78,29 +82,67 @@
   }
 
   @include vp-1023 {
-    max-width: 27%;
+    max-width: 30%;
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 15px;
+    padding-bottom: 20px;
   }
 
-  max-width: 30%;
+  max-width: 28%;
   background-color: $color-alice-blue;
   padding-top: 30px;
-  padding-bottom: 50px;
+  padding-bottom: 46px;
   padding-left: 30px;
   padding-right: 30px;
 }
 
 .advantages__item h3 {
+  @include vp-767 {
+    margin-right: 51px;
+    margin-top: 11px;
+    margin-bottom: 8px;
+  }
+
   @include vp-1023 {
     line-height: 1.4;
+    margin-top: 7px;
+    margin-bottom: 9px;
   }
 
   font-weight: 500;
   font-size: 18px;
   line-height: 1.5;
+  margin: 0;
+  margin-top: 12px;
+  margin-bottom: 10px;
 }
 
 .advantages__item p {
+  @include vp-1023 {
+    line-height: 20px;
+  }
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4;
+  margin: 0;
+}
+
+.advantages__item--different {
+  @include vp-1023 {
+    padding: 25px 17px 20px 20px;
+  }
+}
+
+.advantages__item--different h3 {
+  @include vp-1023 {
+    margin-bottom: 19px;
+  }
+}
+
+.advantages__item--different svg {
+  @include vp-1023 {
+    width: 36px;
+  }
 }

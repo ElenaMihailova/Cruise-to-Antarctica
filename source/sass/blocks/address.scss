@@ -1,6 +1,8 @@
 .address {
   @include vp-767 {
     padding: 65px 15px;
+    padding-top: 57px;
+    padding-bottom: 63px;
   }
 
   @include vp-1023 {
@@ -12,18 +14,28 @@
 
 .address__wrapper {
   @include vp-767 {
+    display: flex;
     flex-direction: column;
+    gap: 35px;
   }
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
+  @include vp-1023 {
+    gap: 30px;
+  }
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
 }
 
 .address__map {
   @include vp-767 {
     order: 2;
+    height: 316px;
+  }
+
+  @include vp-1023 {
+    height: 335px;
   }
 
   order: 0;
@@ -35,11 +47,20 @@
 }
 
 .address__description {
+  @include vp-767 {
+    padding-top: 0;
+  }
+
+  @include vp-1023 {
+    padding-top: 65px;
+    margin-bottom: 27px;
+  }
+
   margin: 0;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.5;
-  margin-bottom: 45px;
+  margin-bottom: 31px;
 }
 
 .address__link {
@@ -49,12 +70,44 @@
 }
 
 .address__link-wrap {
+  @include vp-1023 {
+    gap: 6px;
+    align-items: flex-start;
+  }
+
   display: flex;
   gap: 10px;
   align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 21px;
 }
 
 .address__link-wrap:last-of-type {
   margin-bottom: 0;
+}
+
+.address__order {
+  @include vp-1023 {
+    padding: 0;
+  }
+
+  padding-left: 61px;
+  padding-top: 76px;
+}
+
+.address__link-wrap svg {
+  @include vp-1023 {
+    width: 22px;
+  }
+
+  flex-shrink: 0;
+  align-self: center;
+}
+
+//todo
+.address__link:hover {
+  color: $color-neon-blue;
+}
+
+.address__link:active {
+  color: $color-neon-blue;
 }

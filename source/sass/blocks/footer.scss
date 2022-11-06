@@ -1,14 +1,21 @@
 .footer {
   @include vp-767 {
     padding: 40px 15px;
+    padding-top: 33px;
   }
+
   @include vp-1023 {
     padding: 50px 45px;
+    padding-top: 36px;
+    padding-right: 35px;
   }
+
   flex-grow: 0;
   flex-shrink: 0;
   background-color: #011c40;
   padding: 50px;
+  padding-left: 103px;
+  padding-right: 96px;
 }
 
 .footer__wrapper {
@@ -16,10 +23,15 @@
     flex-direction: column;
     align-items: flex-start;
   }
+
   display: flex;
   align-items: center;
 }
 
 .footer__logo {
+  @include vp-1023 {
+    margin-right: 25px;
+  }
+
   margin-right: 40px;
 }

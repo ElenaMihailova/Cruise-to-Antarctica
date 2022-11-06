@@ -1,7 +1,12 @@
 .form {
+  @include vp-767 {
+    padding-right: 0;
+  }
+
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding-right: 3px;
 }
 
 .form__input-wrapper input {
@@ -9,6 +14,24 @@
   padding: 11px;
   border: none;
   padding-left: 16px;
+
+  &:hover {
+    outline: 5px solid $color-saffron-hover;
+    border-radius: 3px;
+    border: none;
+  }
+
+  &:focus {
+    outline: 5px solid $color-saffron-hover;
+    border-radius: 3px;
+    border: none;
+  }
+
+  &:active {
+    outline: 5px solid $color-saffron-hover;
+    border-radius: 3px;
+    border: none;
+  }
 }
 
 .form__input-wrapper {
@@ -25,6 +48,10 @@
 }
 
 .form button {
+  @include vp-767 {
+    margin-top: 5px;
+  }
+
   font-family: inherit;
   font-style: normal;
   font-weight: 600;
@@ -33,7 +60,16 @@
   color: #011c40;
   border: none;
   width: 100%;
-  padding-top: 15px;
-  padding-bottom: 17px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   margin-top: 10px;
+
+  &:hover {
+    background-color: $color-saffron-hover;
+  }
+
+  &:active {
+    background-color: $color-blue-active;
+    color: $color-default-white;
+  }
 }
