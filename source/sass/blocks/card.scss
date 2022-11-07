@@ -10,10 +10,8 @@
 
 .card__content {
   display: none;
-}
-
-.card__button {
-  display: none;
+  flex-direction: column;
+  padding: 35px 25px;
 }
 
 .card__preview {
@@ -56,4 +54,48 @@
   grid-column: 1/-1;
   margin-left: 30px;
   margin-bottom: 24px;
+}
+
+.card__content dt {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  color: $color-alice-blue;
+  margin-bottom: 10px;
+}
+
+.card__content dd {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  color: $color-alice-blue;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.card__content dl {
+  margin: 0;
+}
+
+.card__button {
+  width: 100%;
+  background-color: $color-alice-blue;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5;
+  color: $color-tangaroa;
+  padding-top: 14px;
+  padding-bottom: 15px;
+  text-align: center;
+
+  &:hover {
+    background-color: $color-saffron-hover;
+  }
+
+  &:active {
+    background-color: $color-blue-active;
+    color: $color-default-white;
+  }
 }

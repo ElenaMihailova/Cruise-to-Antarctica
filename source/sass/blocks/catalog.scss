@@ -60,3 +60,29 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
+
+.catalog__item {
+  position: relative;
+}
+
+.catalog__item:hover,
+.catalog__item:focus,
+.catalog__item:focus-within {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $color-tangaroa;
+  }
+}
+
+.catalog__item:hover .card__content {
+  display: flex;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}

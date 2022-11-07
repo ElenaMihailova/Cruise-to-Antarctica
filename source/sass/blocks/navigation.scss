@@ -16,7 +16,7 @@
     margin-left: 35px;
     padding-left: 15px;
     padding-right: 30px;
-    padding-bottom: 300px;
+    padding-bottom: 308px;
   }
 }
 
@@ -56,8 +56,8 @@
 .navigation--header .navigation__list {
   @include vp-767 {
     flex-direction: column;
-    padding-top: 75px;
-    gap: 10px;
+    padding-top: 82px;
+    gap: 23px;
   }
 }
 

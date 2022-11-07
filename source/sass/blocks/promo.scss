@@ -1,16 +1,16 @@
 .promo {
   @include vp-767 {
-    padding-top: 133px;
+    padding-top: 119px;
     padding-bottom: 179px;
   }
 
   @include vp-1023 {
     padding-left: 0;
-    padding-top: 214px;
+    padding-top: 201px;
     padding-bottom: 276px;
   }
 
-  padding-top: 197px;
+  padding-top: 189px;
   padding-bottom: 278px;
   padding-left: 95px;
 }
