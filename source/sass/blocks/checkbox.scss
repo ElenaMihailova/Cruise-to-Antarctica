@@ -9,6 +9,7 @@
   height: 18px;
   background-color: $color-alice-blue;
   flex-shrink: 0;
+  cursor: pointer;
 }
 
 .checkbox span {
@@ -31,6 +32,7 @@
   flex-wrap: nowrap;
   letter-spacing: 0.04rem;
   gap: 5px;
+  cursor: pointer;
 }
 
 .checkbox:hover span {

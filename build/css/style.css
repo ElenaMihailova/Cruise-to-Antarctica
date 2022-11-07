@@ -813,6 +813,7 @@ button,
 }
 
 .header__background {
+  background-color: #004f8e;
   background-image: url("../img/background.webp");
   background-repeat: no-repeat;
   position: absolute;
@@ -894,6 +895,7 @@ button,
 }
 
 .advantages {
+  background-color: #def4fd;
   background-image: url("../img/background-adventages.webp");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1078,8 +1080,8 @@ button,
 .catalog {
   padding-top: 86px;
   padding-bottom: 120px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 118px;
+  padding-right: 118px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1109,6 +1111,8 @@ button,
   -ms-grid-columns: (1fr)[4];
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+  width: 100%;
+  justify-items: center;
 }
 
 .catalog__item {
@@ -1147,12 +1151,15 @@ button,
 }
 
 .card {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-  grid-template-columns: 1fr;
-  -ms-grid-rows: auto auto;
-  grid-template-rows: auto auto;
+  position: relative;
+  min-height: 386px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  width: 100%;
 }
 
 .card__content {
@@ -1161,23 +1168,26 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
+  padding: 35px 25px;
+  padding-right: 15px;
+  position: absolute;
+  background-color: #011c40;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 35px 25px;
-  padding-right: 15px;
-  max-height: 100%;
-  width: 100%;
 }
 
 .card__preview {
   z-index: -1;
-  grid-column: 1/-1;
-  grid-row: 1/-1;
-  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .card__preview img {
@@ -1195,7 +1205,7 @@ button,
   grid-row: 2/3;
   grid-column: 1/-1;
   margin-left: 30px;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
 }
 
 .card__content dt {
@@ -1253,6 +1263,7 @@ button,
 }
 
 .booking {
+  background-color: #def4fd;
   background-image: url("../img/backgroundForm.webp");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1414,6 +1425,7 @@ button,
   padding-top: 11px;
   padding-bottom: 11px;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 .form button:hover {
@@ -1439,6 +1451,7 @@ button,
   background-color: #f9fbfd;
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  cursor: pointer;
 }
 
 .checkbox span {
@@ -1466,6 +1479,7 @@ button,
   flex-wrap: nowrap;
   letter-spacing: 0.04rem;
   gap: 5px;
+  cursor: pointer;
 }
 
 .checkbox:hover span {
@@ -1644,6 +1658,13 @@ button,
   }
 }
 
+@media (max-width: 1279px) {
+  .catalog {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
 @media (max-width: 1023px) {
   .container {
     padding: 0 24px;
@@ -1799,8 +1820,6 @@ button,
   .catalog {
     padding-top: 90px;
     padding-bottom: 98px;
-    padding-left: 60px;
-    padding-right: 60px;
   }
 
   .catalog__title {
@@ -2154,11 +2173,12 @@ button,
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    gap: 29px;
+    gap: 30px;
   }
 
   .card__preview img {
     width: 100%;
+    height: 100%;
   }
 
   .card h3 {
