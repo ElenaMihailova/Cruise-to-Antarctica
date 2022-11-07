@@ -36,6 +36,7 @@
 
 .form__input-wrapper {
   width: 100%;
+  position: relative;
 }
 
 .form__input-wrapper input::placeholder {
@@ -72,4 +73,12 @@
     background-color: $color-blue-active;
     color: $color-default-white;
   }
+}
+
+.form__input-wrapper span {
+  position: absolute;
+  color: $color-saffron-hover;
+  top: 0;
+  right: 0;
+  font-size: 12px;
 }

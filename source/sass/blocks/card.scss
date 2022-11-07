@@ -11,7 +11,12 @@
 .card__content {
   display: none;
   flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
   padding: 35px 25px;
+  padding-right: 15px;
+  max-height: 100%;
+  width: 100%;
 }
 
 .card__preview {
@@ -61,7 +66,6 @@
   font-size: 14px;
   line-height: 1.4;
   color: $color-alice-blue;
-  margin-bottom: 10px;
 }
 
 .card__content dd {
@@ -70,7 +74,7 @@
   line-height: 1.4;
   color: $color-alice-blue;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .card__content dl {
@@ -98,4 +102,15 @@
     background-color: $color-blue-active;
     color: $color-default-white;
   }
+}
+
+.card__content p {
+  padding: 0;
+  margin: 0;
+  color: $color-alice-blue;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
 }

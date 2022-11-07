@@ -67,6 +67,10 @@
     line-height: 22px;
     color: #011c40;
     padding: 10px;
+
+    &:hover {
+      color: $color-saffron-hover;
+    }
   }
 }
 

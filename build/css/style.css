@@ -1135,6 +1135,15 @@ button,
   position: absolute;
   top: 0;
   bottom: 0;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.catalog__item:hover .card h3 {
+  position: absolute;
+  top: 0;
+  z-index: 2;
 }
 
 .card {
@@ -1152,7 +1161,16 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 35px 25px;
+  padding-right: 15px;
+  max-height: 100%;
+  width: 100%;
 }
 
 .card__preview {
@@ -1185,7 +1203,6 @@ button,
   font-size: 14px;
   line-height: 1.4;
   color: #f9fbfd;
-  margin-bottom: 10px;
 }
 
 .card__content dd {
@@ -1194,7 +1211,7 @@ button,
   line-height: 1.4;
   color: #f9fbfd;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .card__content dl {
@@ -1222,6 +1239,17 @@ button,
 .card__button:active {
   background-color: #1e1ed0;
   color: #ffffff;
+}
+
+.card__content p {
+  padding: 0;
+  margin: 0;
+  color: #f9fbfd;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
 }
 
 .booking {
@@ -1326,6 +1354,7 @@ button,
 
 .form__input-wrapper {
   width: 100%;
+  position: relative;
 }
 
 .form__input-wrapper input::-webkit-input-placeholder {
@@ -1394,6 +1423,14 @@ button,
 .form button:active {
   background-color: #1e1ed0;
   color: #ffffff;
+}
+
+.form__input-wrapper span {
+  position: absolute;
+  color: #f1c232;
+  top: 0;
+  right: 0;
+  font-size: 12px;
 }
 
 .checkbox input {
@@ -1975,6 +2012,10 @@ button,
     padding: 10px;
   }
 
+  .navigation--header .navigation__link:hover {
+    color: #f1c232;
+  }
+
   .navigation--footer .navigation__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2024,7 +2065,6 @@ button,
 
   .footer {
     padding: 40px 15px;
-    padding-top: 33px;
   }
 
   .footer__wrapper {
@@ -2143,7 +2183,7 @@ button,
   .booking__description {
     font-size: 16px;
     line-height: 1.4;
-    width: auto;
+    width: 71%;
   }
 
   .booking__wrapper {
