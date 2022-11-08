@@ -12,11 +12,12 @@
     top: 0;
     left: 0;
     right: 0;
+    bottom: 0;
     transition-duration: 0.25s;
     margin-left: 35px;
     padding-left: 15px;
     padding-right: 30px;
-    padding-bottom: 308px;
+    padding-bottom: 30px;
   }
 }
 
@@ -47,6 +48,7 @@
   line-height: 1;
   color: $color-default-white;
   padding: 10px;
+  display: block;
 }
 
 .navigation__item {
@@ -56,8 +58,8 @@
 .navigation--header .navigation__list {
   @include vp-767 {
     flex-direction: column;
-    padding-top: 82px;
-    gap: 23px;
+    padding-top: 74px;
+    gap: 9px;
   }
 }
 
@@ -78,13 +80,14 @@
   @include vp-767 {
     display: flex;
     flex-direction: column;
+    gap: 0;
   }
 }
 
 .navigation--footer {
   @include vp-767 {
     margin-top: 20px;
-    margin-bottom: 23px;
+    margin-bottom: 16px;
   }
 
   @include vp-1023 {
@@ -98,6 +101,7 @@
 .navigation--footer .navigation__link {
   @include vp-767 {
     padding-left: 0;
+    line-height: 12px;
   }
 
   @include vp-1023 {

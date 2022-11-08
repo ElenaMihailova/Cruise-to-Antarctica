@@ -1,5 +1,6 @@
 {
   "name": "Liga-A-accelerator-template",
+  "homepage": "https://elenamihailova.github.io/Cruise-to-Antarctica/",
   "version": "2.0.0",
   "type": "module",
   "description": "Стартовый шаблон сборки Лиги А",
@@ -15,7 +16,9 @@
     "build": "cross-env NODE_ENV=production gulp build & gulp imagemin",
     "start": "cross-env NODE_ENV=development gulp start",
     "webp": "gulp webp",
-    "imagemin": "gulp imagemin"
+    "imagemin": "gulp imagemin",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "editorconfig-cli": [
     "*.json",
@@ -56,5 +59,8 @@
   },
   "engines": {
     "node": ">=16.15.1"
+  },
+  "dependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
