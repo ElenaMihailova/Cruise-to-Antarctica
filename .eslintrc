@@ -9,4 +9,8 @@ env:
   browser: true
   commonjs: true
 
+globals:
+  _: readonly
+  Pristine: readonly
+
 extends: "./eslintconfig.cjs"

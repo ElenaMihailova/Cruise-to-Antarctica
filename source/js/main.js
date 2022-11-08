@@ -1,3 +1,5 @@
+document.querySelector('.nojs').classList.remove('nojs');
+
 const openMenu = (buttonElem, menuElem) => {
   const button = document.querySelector(buttonElem);
   const menu = document.querySelector(menuElem);
@@ -10,11 +12,10 @@ const openMenu = (buttonElem, menuElem) => {
 
 openMenu('.header__button', '.header');
 
-// Валидация формы
-const forms = document.querySelectorAll('.js-form');
+window.onload = function () {
 
-forms.forEach((formElem) => {
-  const pristine = new Pristine(formElem, {
+  const form = document.querySelector('.js-form');
+  const pristine = new Pristine(form, {
     classTo: 'form__input-wrapper',
     errorClass: 'form__item--invalid',
     successClass: 'form__item--valid',
@@ -23,11 +24,11 @@ forms.forEach((formElem) => {
     errorTextClass: 'form__error',
   });
 
-  formElem.addEventListener('submit', (evt) => {
+  form.addEventListener('submit', function (evt) {
     evt.preventDefault();
     const valid = pristine.validate();
     if (valid) {
-      formElem.submit();
+      form.submit();
     }
   });
-});
+};

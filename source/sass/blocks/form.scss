@@ -83,3 +83,8 @@
   right: 0;
   font-size: 12px;
 }
+
+.form__input-wrapper input:valid {
+  outline: 3px solid #008000;
+  border-radius: 2px;
+}

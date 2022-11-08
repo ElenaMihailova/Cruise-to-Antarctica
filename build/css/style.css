@@ -1191,7 +1191,8 @@ button,
 }
 
 .card__preview img {
-  min-height: 386px;
+  width: 100%;
+  height: 386px;
 }
 
 .card h3 {
@@ -1445,6 +1446,11 @@ button,
   font-size: 12px;
 }
 
+.form__input-wrapper input:valid {
+  outline: 3px solid green;
+  border-radius: 2px;
+}
+
 .checkbox input {
   width: 18px;
   height: 18px;
@@ -1602,6 +1608,28 @@ button,
 
 .logo__img {
   fill: #ffffff;
+}
+
+.nojs .navigation--header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  background-color: inherit;
+  padding-bottom: 20px;
+}
+
+.nojs .navigation--header .navigation__list {
+  padding-top: 20px;
+}
+
+.nojs .navigation--header .navigation__link {
+  color: #f9fbfd;
+  padding-left: 0;
+}
+
+.nojs .header__button {
+  display: none;
 }
 
 /* @mixin hover-focus {
