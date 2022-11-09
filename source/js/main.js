@@ -10,7 +10,17 @@ const openMenu = (buttonElem, menuElem) => {
   });
 };
 
+const closeMenu = (coverElem, menuElem) => {
+  const menu = document.querySelector(menuElem);
+  const cover = document.querySelector(coverElem);
+
+  cover.addEventListener('click', () => {
+    menu.classList.remove('header--opened');
+  });
+};
+
 openMenu('.header__button', '.header');
+closeMenu('.header__cover-js', '.header');
 
 window.onload = function () {
 

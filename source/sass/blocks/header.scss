@@ -115,7 +115,20 @@
 .header--opened .navigation__list {
   @include vp-767 {
     flex-direction: column;
-    // padding-top: 74px;
     gap: 9px;
   }
+}
+
+.header__cover-js {
+  display: none;
+}
+
+.header--opened .header__cover-js {
+  display: block;
+  position: fixed;
+  background-color: transparent;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
 }
