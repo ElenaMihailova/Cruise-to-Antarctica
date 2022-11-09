@@ -1053,18 +1053,6 @@ button,
   margin: 0;
 }
 
-.promo__background {
-  background-image: url("../img/background.webp");
-  background-repeat: no-repeat;
-  position: absolute;
-  background-size: cover;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  height: 100%;
-}
-
 .catalog {
   padding-top: 86px;
   padding-bottom: 120px;
@@ -1821,10 +1809,6 @@ button,
     width: auto;
   }
 
-  .promo__background {
-    background-image: url("../img/backgroundtablet.webp");
-  }
-
   .catalog {
     padding-top: 90px;
     padding-bottom: 98px;
@@ -1947,10 +1931,6 @@ button,
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
   .header {
-    background-image: url("../img/backgroundtablet@2.webp");
-  }
-
-  .promo__background {
     background-image: url("../img/backgroundtablet@2.webp");
   }
 
@@ -2162,10 +2142,6 @@ button,
     width: 70%;
   }
 
-  .promo__background {
-    background-image: url("../img/backgroundmobile.webp");
-  }
-
   .catalog {
     padding-left: 25px;
     padding-right: 25px;
@@ -2323,10 +2299,6 @@ button,
     background-image: url("../img/backgroundmobile@2.webp");
   }
 
-  .promo__background {
-    background-image: url("../img/backgroundmobile@2.webp");
-  }
-
   .booking {
     background-image: url("../img/background-form-mobile@2.webp");
   }
@@ -2340,10 +2312,6 @@ button,
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .header {
-    background-image: url("../img/background@2.webp");
-  }
-
-  .promo__background {
     background-image: url("../img/background@2.webp");
   }
 
