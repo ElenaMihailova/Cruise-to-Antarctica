@@ -786,6 +786,10 @@ button,
 }
 
 .header {
+  background-color: #004f8e;
+  background-image: url("../img/background.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0;
   padding-top: 35px;
   padding-left: 103px;
@@ -808,26 +812,9 @@ button,
   width: 100%;
 }
 
-.header__menu-wrap {
-  padding-top: 5px;
-}
-
-.header__background {
-  background-color: #004f8e;
-  background-image: url("../img/background.webp");
-  background-repeat: no-repeat;
-  position: absolute;
-  background-size: cover;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  height: 100%;
-}
-
 .header__button {
   display: none;
+  cursor: pointer;
 }
 
 .header__button-icon--cross {
@@ -844,7 +831,7 @@ button,
 
 .header--opened .header__button {
   position: absolute;
-  top: 23px;
+  top: 14px;
   right: 8px;
   z-index: 2;
 }
@@ -873,6 +860,7 @@ button,
   line-height: 1;
   color: #ffffff;
   padding: 10px;
+  display: block;
 }
 
 .navigation__item {
@@ -1144,7 +1132,7 @@ button,
   justify-content: space-between;
 }
 
-.catalog__item:hover .card h3 {
+.catalog__item:hover h3 {
   position: absolute;
   top: 0;
   z-index: 2;
@@ -1616,20 +1604,15 @@ button,
   display: flex;
   position: relative;
   background-color: inherit;
-  padding-bottom: 20px;
-}
-
-.nojs .navigation--header .navigation__list {
-  padding-top: 20px;
-}
-
-.nojs .navigation--header .navigation__link {
-  color: #f9fbfd;
-  padding-left: 0;
 }
 
 .nojs .header__button {
   display: none;
+}
+
+.nojs .navigation__link {
+  color: #f9fbfd;
+  padding-left: 0;
 }
 
 /* @mixin hover-focus {
@@ -1702,9 +1685,6 @@ button,
     padding-left: 45px;
     padding-right: 35px;
     padding-top: 21px;
-  }
-
-  .header__background {
     background-image: url("../img/backgroundtablet.webp");
   }
 
@@ -1888,7 +1868,7 @@ button,
     font-size: 34px;
     line-height: 1.5;
     text-align: center;
-    margin-bottom: 3px;
+    margin-bottom: 6px;
   }
 
   .booking__description {
@@ -1965,6 +1945,20 @@ button,
   }
 }
 
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+  .header {
+    background-image: url("../img/backgroundtablet@2.webp");
+  }
+
+  .promo__background {
+    background-image: url("../img/backgroundtablet@2.webp");
+  }
+
+  .booking {
+    background-image: url("../img/background-form-tablet@2.webp");
+  }
+}
+
 @media (max-width: 767px) {
   .container {
     padding: 0 16px;
@@ -1987,27 +1981,21 @@ button,
     padding-left: 15px;
     padding-right: 9px;
     padding-top: 11px;
+    background-image: url("../img/backgroundmobile.webp");
   }
 
   .header__wrapper {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    min-height: 46px;
-  }
-
-  .header__menu-wrap {
-    padding-top: 0;
-  }
-
-  .header__background {
-    background-image: url("../img/backgroundmobile.webp");
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    min-height: 113px;
   }
 
   .header__button {
     display: block;
     border: none;
     background-color: inherit;
+    padding-top: 10px;
   }
 
   .header--opened .header__logo {
@@ -2019,6 +2007,25 @@ button,
 
   .header--opened .logo__img {
     fill: #011c40;
+  }
+
+  .header--opened .navigation__link {
+    font-size: 18px;
+    line-height: 22px;
+    color: #011c40;
+    padding: 10px;
+  }
+
+  .header--opened .navigation__link:hover {
+    color: #f1c232;
+  }
+
+  .header--opened .navigation__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 9px;
   }
 
   .navigation {
@@ -2034,33 +2041,15 @@ button,
     top: 0;
     left: 0;
     right: 0;
+    bottom: 0;
     -webkit-transition-duration: 0.25s;
     -o-transition-duration: 0.25s;
     transition-duration: 0.25s;
     margin-left: 35px;
     padding-left: 15px;
     padding-right: 30px;
-    padding-bottom: 308px;
-  }
-
-  .navigation--header .navigation__list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    padding-top: 82px;
-    gap: 23px;
-  }
-
-  .navigation--header .navigation__link {
-    font-size: 18px;
-    line-height: 22px;
-    color: #011c40;
-    padding: 10px;
-  }
-
-  .navigation--header .navigation__link:hover {
-    color: #f1c232;
+    padding-bottom: 30px;
+    padding-top: 73px;
   }
 
   .navigation--footer .navigation__list {
@@ -2071,15 +2060,17 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    gap: 0;
   }
 
   .navigation--footer {
     margin-top: 20px;
-    margin-bottom: 23px;
+    margin-bottom: 16px;
   }
 
   .navigation--footer .navigation__link {
     padding-left: 0;
+    line-height: 12px;
   }
 
   .advantages {
@@ -2156,7 +2147,7 @@ button,
   }
 
   .promo {
-    padding-top: 119px;
+    padding-top: 52px;
     padding-bottom: 179px;
   }
 
@@ -2231,7 +2222,7 @@ button,
   .booking__description {
     font-size: 16px;
     line-height: 1.4;
-    width: 71%;
+    width: 82%;
   }
 
   .booking__wrapper {
@@ -2327,8 +2318,36 @@ button,
   }
 }
 
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .header {
+    background-image: url("../img/backgroundmobile@2.webp");
+  }
+
+  .promo__background {
+    background-image: url("../img/backgroundmobile@2.webp");
+  }
+
+  .booking {
+    background-image: url("../img/background-form-mobile@2.webp");
+  }
+}
+
 @media (hover: hover) {
   .btn:hover:not(.focus-visible) {
     opacity: 0.8;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .header {
+    background-image: url("../img/background@2.webp");
+  }
+
+  .promo__background {
+    background-image: url("../img/background@2.webp");
+  }
+
+  .booking {
+    background-image: url("../img/backgroundForm@2.webp");
   }
 }
