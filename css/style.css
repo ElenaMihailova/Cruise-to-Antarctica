@@ -840,6 +840,20 @@ button,
   display: none;
 }
 
+.header__cover-js {
+  display: none;
+}
+
+.header--opened .header__cover-js {
+  display: block;
+  position: fixed;
+  background-color: transparent;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
 .navigation__list {
   list-style: none;
   display: -webkit-box;
