@@ -2,18 +2,13 @@
   display: flex;
   position: relative;
   background-color: inherit;
-  padding-bottom: 20px;
-
-  & .navigation__list {
-    padding-top: 20px;
-  }
-
-  & .navigation__link {
-    color: $color-alice-blue;
-    padding-left: 0;
-  }
 }
 
 .nojs .header__button {
   display: none;
+}
+
+.nojs .navigation__link {
+  color: $color-alice-blue;
+  padding-left: 0;
 }

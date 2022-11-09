@@ -4,6 +4,10 @@
     padding-right: 9px;
     padding-top: 11px;
     background-image: url("../img/backgroundmobile.webp");
+
+    @include retina {
+      background-image: url("../img/backgroundmobile@2.webp");
+    }
   }
 
   @include vp-1023 {
@@ -11,6 +15,10 @@
     padding-right: 35px;
     padding-top: 21px;
     background-image: url("../img/backgroundtablet.webp");
+
+    @include retina {
+      background-image: url("../img/backgroundtablet@2.webp");
+    }
   }
 
   background-color: #004f8e;
@@ -24,6 +32,10 @@
   flex-shrink: 0;
   flex-grow: 0;
   position: relative;
+
+  @include retina {
+    background-image: url("../img/background@2.webp");
+  }
 }
 
 .header__wrapper {
@@ -63,7 +75,7 @@
 
 .header--opened .header__button {
   position: absolute;
-  top: 23px;
+  top: 14px;
   right: 8px;
   z-index: 2;
 }
@@ -84,5 +96,26 @@
 .header--opened .logo__img {
   @include vp-767 {
     fill: $color-tangaroa;
+  }
+}
+
+.header--opened .navigation__link {
+  @include vp-767 {
+    font-size: 18px;
+    line-height: 22px;
+    color: #011c40;
+    padding: 10px;
+
+    &:hover {
+      color: $color-saffron-hover;
+    }
+  }
+}
+
+.header--opened .navigation__list {
+  @include vp-767 {
+    flex-direction: column;
+    // padding-top: 74px;
+    gap: 9px;
   }
 }

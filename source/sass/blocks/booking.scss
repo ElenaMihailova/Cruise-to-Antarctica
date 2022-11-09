@@ -5,6 +5,10 @@
     background-image: url("../img/background-form-mobile.webp");
     padding-left: 15px;
     padding-right: 15px;
+
+    @include retina {
+      background-image: url("../img/background-form-mobile@2.webp");
+    }
   }
 
   @include vp-1023 {
@@ -12,6 +16,10 @@
     padding-top: 89px;
     padding-bottom: 100px;
     background-image: url("../img/background-form-tablet.webp");
+
+    @include retina {
+      background-image: url("../img/background-form-tablet@2.webp");
+    }
   }
 
   background-color: #def4fd;
@@ -22,6 +30,10 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
+  @include retina {
+    background-image: url("../img/backgroundForm@2.webp");
+  }
 }
 
 .booking__title {
