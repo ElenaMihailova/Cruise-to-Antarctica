@@ -20,9 +20,11 @@
   padding-bottom: 120px;
   padding-left: 118px;
   padding-right: 118px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+
+.catalog__container {
+  @include max-width;
+  width: 100%;
 }
 
 .catalog__title {
@@ -40,6 +42,7 @@
   font-size: 28px;
   line-height: 1.5;
   margin-bottom: 48px;
+  text-align: center;
 }
 
 .catalog__list {
@@ -72,7 +75,8 @@
 
 .catalog__item:hover,
 .catalog__item:focus,
-.catalog__item:focus-within {
+.catalog__item:focus-within,
+.catalog__item:focus-visible {
   &::before {
     content: "";
     position: absolute;
@@ -98,3 +102,4 @@
   top: 0;
   z-index: 2;
 }
+

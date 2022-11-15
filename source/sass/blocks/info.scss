@@ -30,6 +30,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
+  @include max-width;
 }
 
 .info__title {
@@ -91,6 +92,3 @@
   }
 }
 
-.info__img {
-  margin: 0 auto;
-}

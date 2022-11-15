@@ -13,6 +13,7 @@
   padding-top: 189px;
   padding-bottom: 278px;
   padding-left: 95px;
+  @include max-width;
 }
 
 .promo__title {

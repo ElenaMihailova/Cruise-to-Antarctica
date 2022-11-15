@@ -31,7 +31,6 @@
   padding-right: 95px;
   flex-shrink: 0;
   flex-grow: 0;
-  position: relative;
 
   @include retina {
     background-image: url("../img/background@2.webp");
@@ -47,6 +46,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  @include max-width;
 }
 
 .header__button {
@@ -124,11 +124,16 @@
 }
 
 .header--opened .header__cover-js {
-  display: block;
-  position: fixed;
-  background-color: transparent;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
+  @include vp-767 {
+    display: block;
+    position: fixed;
+    background-color: #002B66;
+    opacity: 0.5;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+  }
+  display: none;
 }

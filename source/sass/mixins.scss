@@ -74,6 +74,11 @@
   }
 }
 
+@mixin max-width {
+  margin: 0 auto;
+  max-width: 1366px;
+}
+
 // Mobile first
 
 // @mixin vp-375 {
