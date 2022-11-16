@@ -1131,7 +1131,8 @@ button,
   background-color: #011c40;
 }
 
-.catalog__item:hover .card__content {
+.catalog__item:hover .card__content,
+.catalog__item:focus .card__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1227,11 +1228,6 @@ button,
   margin-bottom: 10px;
 }
 
-.card__content dl {
-  margin: 0;
-  overflow: scroll;
-}
-
 /* Скрываем scrollbar для Chrome, Safari и Opera */
 
 .card__content dl::-webkit-scrollbar {
@@ -1241,6 +1237,8 @@ button,
 /* Скрываем scrollbar для IE, Edge и Firefox */
 
 .card__content dl {
+  margin: 0;
+  overflow: scroll;
   -ms-overflow-style: none;
   /* IE и Edge */
   scrollbar-width: none;
@@ -1377,19 +1375,16 @@ button,
 
 .form__input-wrapper input:hover {
   outline: 5px solid #f1c232;
-  border-radius: 3px;
   border: none;
 }
 
 .form__input-wrapper input:focus {
   outline: 5px solid #f1c232;
-  border-radius: 3px;
   border: none;
 }
 
 .form__input-wrapper input:active {
   outline: 5px solid #f1c232;
-  border-radius: 3px;
   border: none;
 }
 
@@ -1489,20 +1484,6 @@ button,
   cursor: pointer;
 }
 
-.checkbox span {
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 1.3;
-  color: #f9fbfd;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .checkbox label {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1515,6 +1496,11 @@ button,
   letter-spacing: 0.04rem;
   gap: 5px;
   cursor: pointer;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.3;
+  color: #f9fbfd;
 }
 
 .checkbox:hover span {
@@ -1523,6 +1509,12 @@ button,
 
 .checkbox:hover input {
   outline: 2px solid #f1c232;
+}
+
+.checkbox .form__error {
+  position: absolute;
+  top: 20px;
+  left: 0;
 }
 
 .address {
@@ -2082,7 +2074,7 @@ button,
   .header--opened .header__cover-js {
     display: block;
     position: fixed;
-    background-color: #002B66;
+    background-color: #002a66;
     opacity: 0.5;
     width: 100vw;
     height: 100vh;
