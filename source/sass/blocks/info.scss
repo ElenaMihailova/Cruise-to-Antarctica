@@ -30,6 +30,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
+
   @include max-width;
 }
 
@@ -91,4 +92,3 @@
     padding-top: 10px;
   }
 }
-

@@ -205,5 +205,3 @@ export class Modals {
     this._enableScrolling = true;
   }
 }
-
-console.log('текст из modal');

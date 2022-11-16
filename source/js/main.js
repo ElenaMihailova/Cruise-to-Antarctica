@@ -1,31 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import {scrollLock} from './utils/scroll-lock';
+import {closeMenu, menuHeader, closeMenuLink} from './utils/menu';
 
 document.querySelector('.nojs').classList.remove('nojs');
-
-const openMenu = (buttonElem, menuElem) => {
-  const button = document.querySelector(buttonElem);
-  const menu = document.querySelector(menuElem);
-
-  button.addEventListener('click', (elem) => {
-    elem.preventDefault();
-    menu.classList.toggle('header--opened');
-    scrollLock.disableScrolling();
-  });
-};
-
-const closeMenu = (coverElem, menuElem) => {
-  const menu = document.querySelector(menuElem);
-  const cover = document.querySelector(coverElem);
-
-  cover.addEventListener('click', () => {
-    menu.classList.remove('header--opened');
-  });
-};
-
-openMenu('.header__button', '.header');
-closeMenu('.header__cover-js', '.header');
 
 window.onload = function () {
 
@@ -57,6 +34,9 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  menuHeader('.header__button', 'header');
+  closeMenu('.header__cover-js', '.header');
+  closeMenuLink('.header');
 
   // Modules
   // ---------------------------------

@@ -8,6 +8,7 @@
   }
 
   padding: 120px 103px;
+
   @include max-width;
 }
 
@@ -22,8 +23,6 @@
     gap: 30px;
   }
 
-  // display: grid;
-  // grid-template-columns: repeat(2, 1fr);
   display: flex;
   justify-content: space-between;
   gap: 20px;

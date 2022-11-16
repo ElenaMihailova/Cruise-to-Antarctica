@@ -87,11 +87,6 @@
   margin-bottom: 10px;
 }
 
-.card__content dl {
-  margin: 0;
-  overflow: scroll;
-}
-
 /* Скрываем scrollbar для Chrome, Safari и Opera */
 .card__content dl::-webkit-scrollbar {
   display: none;
@@ -99,6 +94,8 @@
 
 /* Скрываем scrollbar для IE, Edge и Firefox */
 .card__content dl {
+  margin: 0;
+  overflow: scroll;
   -ms-overflow-style: none;
   /* IE и Edge */
   scrollbar-width: none;

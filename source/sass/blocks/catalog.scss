@@ -88,7 +88,8 @@
   }
 }
 
-.catalog__item:hover .card__content {
+.catalog__item:hover .card__content,
+.catalog__item:focus .card__content {
   display: flex;
   z-index: 2;
   position: absolute;
@@ -102,4 +103,3 @@
   top: 0;
   z-index: 2;
 }
-
