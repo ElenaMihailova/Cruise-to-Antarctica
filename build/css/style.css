@@ -1481,7 +1481,7 @@ button,
   -ms-flex-negative: 0;
   flex-shrink: 0;
   cursor: pointer;
-  border-radius: none;
+  border-radius: 0;
   border: none;
 }
 
