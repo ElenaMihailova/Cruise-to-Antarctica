@@ -4,10 +4,12 @@
   }
 
   position: relative;
-  min-height: 386px;
+  max-height: 386px;
   display: flex;
   align-items: flex-end;
   width: 100%;
+  aspect-ratio: 260/386;
+  overflow: hidden;
 }
 
 .card__content {

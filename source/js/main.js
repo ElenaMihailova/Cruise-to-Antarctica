@@ -16,6 +16,17 @@ window.onload = function () {
     errorTextClass: 'form__error',
   });
 
+  function validatePhone(value) {
+    const re = /^[0-9]+$/;
+    return re.test(value);
+  }
+
+  pristine.addValidator(
+      form.querySelector('.js-input--tel'),
+      validatePhone,
+      'Телефонный номер в формате 89236889975'
+  );
+
   form.addEventListener('submit', function (evt) {
     evt.preventDefault();
     const valid = pristine.validate();
@@ -25,6 +36,20 @@ window.onload = function () {
   });
 };
 
+
+const initScroll = () => {
+  const links = document.querySelectorAll('a[href^="#"]');
+  for (let link of links) {
+    link.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      const id = link.getAttribute('href').substring(1);
+      document.getElementById(id).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    });
+  }
+};
 
 // ---------------------------------
 
@@ -45,6 +70,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
+    initScroll();
   });
 });
 

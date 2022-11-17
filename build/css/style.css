@@ -1114,13 +1114,8 @@ button,
   justify-items: center;
 }
 
-.catalog__item {
-  position: relative;
-}
-
 .catalog__item:hover::before,
 .catalog__item:focus::before,
-.catalog__item:focus-within::before,
 .catalog__item:focus-visible::before {
   content: "";
   position: absolute;
@@ -1132,7 +1127,8 @@ button,
 }
 
 .catalog__item:hover .card__content,
-.catalog__item:focus .card__content {
+.catalog__item:focus .card__content,
+.catalog__item:focus-within .card__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1153,7 +1149,7 @@ button,
 
 .card {
   position: relative;
-  min-height: 386px;
+  max-height: 386px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1161,6 +1157,8 @@ button,
   -ms-flex-align: end;
   align-items: flex-end;
   width: 100%;
+  aspect-ratio: 260/386;
+  overflow: hidden;
 }
 
 .card__content {
@@ -1483,6 +1481,8 @@ button,
   -ms-flex-negative: 0;
   flex-shrink: 0;
   cursor: pointer;
+  border-radius: none;
+  border: none;
 }
 
 .checkbox label {

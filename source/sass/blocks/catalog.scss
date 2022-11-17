@@ -69,13 +69,8 @@
   justify-items: center;
 }
 
-.catalog__item {
-  position: relative;
-}
-
 .catalog__item:hover,
 .catalog__item:focus,
-.catalog__item:focus-within,
 .catalog__item:focus-visible {
   &::before {
     content: "";
@@ -89,7 +84,8 @@
 }
 
 .catalog__item:hover .card__content,
-.catalog__item:focus .card__content {
+.catalog__item:focus .card__content,
+.catalog__item:focus-within .card__content {
   display: flex;
   z-index: 2;
   position: absolute;

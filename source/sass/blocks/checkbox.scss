@@ -10,6 +10,8 @@
   background-color: $color-alice-blue;
   flex-shrink: 0;
   cursor: pointer;
+  border-radius: none;
+  border: none;
 }
 
 .checkbox label {
