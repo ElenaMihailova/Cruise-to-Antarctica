@@ -1882,6 +1882,7 @@ button,
 
   .card {
     width: 100%;
+    aspect-ratio: 309/386;
   }
 
   .card__preview img {
